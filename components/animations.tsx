@@ -17,7 +17,7 @@ export const staggerContainer = {
   }
 }
 
-export const FadeIn = ({ children, className = "", delay = 0 }) => (
+export const FadeIn = ({ children }: { children: React.ReactNode, classeName: string }) => {
   <motion.div
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
