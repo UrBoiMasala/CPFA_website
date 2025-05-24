@@ -1,7 +1,9 @@
+'use client';
+
 import React from 'react';
 import { Shield, Heart, Target } from "lucide-react";
 
-function App() {
+function AboutPage() {
   const founders = [
     {
       name: "Shanay Gaitonde",
@@ -92,7 +94,7 @@ function App() {
               <div className="relative h-[400px] w-full overflow-hidden rounded-2xl">
                 <img
                   src={founder.image}
-                  alt={founder.name}
+                  alt={`Photo of ${founder.name}`}
                   className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
                   style={{ objectPosition: "center top" }}
                 />
@@ -169,4 +171,4 @@ function App() {
   );
 }
 
-export default App;
+export default AboutPage;
